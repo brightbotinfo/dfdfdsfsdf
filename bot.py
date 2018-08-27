@@ -20,8 +20,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.content.startswith(command_prefix + 'ping'):
-        msg = :ping_pong: Po0o0nG !!
-        await client.send_message(message.channel, msg)
+        await client.send_message(message.channel, ":ping_pong: Po0o0nG !!")
     
         
 bot.run(os.environ['BOT_TOKEN']) 
