@@ -9,7 +9,7 @@ Client = discord.client()
 client = commands.Bot(command_prefix = "+")
 
 
-@client.event
+@Clent.event
 async def on_ready():
     print ("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
     print(client.user.name)
@@ -17,10 +17,10 @@ async def on_ready():
     print ("|[       Bot is Online      ]|")
     print ("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
     await client.change_presence(game=discord.Game (name="abokhalil"))
-@client.event
+@Cient.event
 async def on_message(message):
     if message.content.startswith(command_prefix + 'ping'):
         await client.send_message(message.channel, ":ping_pong: Po0o0nG !!")
     
         
-bot.run(os.environ['BOT_TOKEN']) 
+Cient.run(os.environ['BOT_TOKEN']) 
