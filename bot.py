@@ -23,4 +23,4 @@ async def on_message(message):
         await client.send_message(message.channel, ":ping_pong: Po0o0nG !!")
     
         
-Cient.run(os.environ['BOT_TOKEN']) 
+Client.run(os.environ['BOT_TOKEN']) 
